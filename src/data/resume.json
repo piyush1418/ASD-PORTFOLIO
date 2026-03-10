@@ -1,0 +1,189 @@
+{
+  "basics": {
+    "name": "Piyush Raj",
+    "title": "Aspiring Software Developer | AI/ML Enthusiast",
+    "summary": "Aspiring Associate Software Developer passionate about developing scalable, efficient, and user-focused applications. Interested in Artificial Intelligence and Machine Learning, and exploring how intelligent technologies can be integrated into modern software solutions to solve real-world problems.",
+    "location": "Delhi NCR, India",
+    "email": "piyushraj100101@gmail.com",
+    "phone": "+91-6206531013",
+    "links": [
+      "www.linkedin.com/in/piyush-raj-ab2260260",
+      "github.com/piyush1418"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Grras Solutions (P) Ltd",
+      "role": "Data Science Intern",
+      "dates": "June 2025 - August 2025",
+      "location": "Jaipur, Rajasthan, India",
+      "bullets": [
+        "Processed and standardized a dataset of over 1,00,000 rows from multiple regions to support weekly analytics—enabled business teams to track KPIs across geography and time.",
+        "Designed smart Excel templates embedded with lookup functions and pivot logic, saving 40% reporting time across 4 departments.",
+        "Developed and maintained Power BI dashboards to visualize revenue trends, customer mix, and monthly performance—regularly used by managers and analysts across business units."
+      ],
+      "tools": "Python, SQL, Power BI"
+    },
+    {
+      "company": "Mission Minded Foundation",
+      "role": "Frontend Developer Intern",
+      "dates": "August 2024 - September 2024",
+      "location": "Remote",
+      "bullets": [
+        "Spearheaded the development of responsive, mobile-first web interfaces using modern HTML5, CSS3, and JavaScript, achieving seamless cross-browser compatibility.",
+        "Implemented advanced performance optimization techniques, including lazy loading and asset minification, which reduced average page load times by 35%.",
+        "Architected a scalable library of reusable UI components, streamlining the development workflow and reducing code duplication across multiple projects.",
+        "Collaborated closely with UI/UX designers to translate complex wireframes into pixel-perfect, accessible (WCAG compliant) web applications.",
+        "Integrated SEO best practices and semantic markup, contributing to a noticeable increase in organic search visibility for core landing pages."
+      ],
+      "tools": "Html, Css, Javascript, UI/UX"
+    },
+    {
+      "company": "Learn and Build",
+      "role": "Robotics Specialist",
+      "dates": "July 2023 - August 2023",
+      "location": "India",
+      "bullets": [
+        "Architected and deployed robust embedded C/C++ firmware for Arduino-based microcontroller systems, driving complex robotic movements and logic.",
+        "Engineered real-time automation workflows by optimizing sensor polling rates and interrupt service routines, reducing system latency by 25%.",
+        "Calibrated and synchronized a diverse array of hardware components, including ultrasonic sensors, servo motors, and gyroscopes, for precise spatial awareness and navigation.",
+        "Designed and executed rigorous hardware-in-the-loop (HIL) testing protocols to identify and resolve edge-case failures in robotic control loops.",
+        "Mentored team members on embedded systems best practices, circuit design, and debugging methodologies."
+      ],
+      "tools": "Arduino, C++, Embedded Systems, Sensors"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Data Standardization Impact",
+      "context": "Processed over 1,00,000 rows to support weekly analytics and KPI tracking."
+    },
+    {
+      "title": "Reporting Efficiency",
+      "context": "Saved 40% reporting time across 4 departments by designing smart Excel templates."
+    },
+    {
+      "title": "Microsoft Recognitions (2025)",
+      "context": "Earned Microsoft Level 9 Profile with 30+ digital badges."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Cricket: IPL Winning Analysis Engine",
+      "stack": "Python, Sql, Power BI",
+      "dates": "June 2025 - September 2025",
+      "bullets": [
+        "Collected and cleaned historical IPL datasets using Pandas and performed feature engineering to extract key insights.",
+        "Visualized outcomes using Matplotlib and Seaborn to display team-wise performance and winning probabilities.",
+        "Conducted Exploratory Data Analysis (EDA) to visualize trends such as toss impact, venue bias, and player performance."
+      ],
+      "architecture": {
+        "nodes": [
+          { "id": "user", "type": "custom", "position": { "x": 250, "y": 0 }, "data": { "label": "User / Analyst", "icon": "User", "details": "Interacts with the dashboards to view insights." } },
+          { "id": "powerbi", "type": "custom", "position": { "x": 250, "y": 100 }, "data": { "label": "Power BI Dashboard", "icon": "LayoutDashboard", "details": "Visualizes revenue trends, team performance, and winning probabilities." } },
+          { "id": "python", "type": "custom", "position": { "x": 100, "y": 200 }, "data": { "label": "Python (Pandas/EDA)", "icon": "FileCode2", "details": "Collects, cleans, and performs feature engineering on historical IPL datasets." } },
+          { "id": "sql", "type": "custom", "position": { "x": 400, "y": 200 }, "data": { "label": "SQL Database", "icon": "Database", "details": "Stores the standardized and cleaned datasets for querying." } }
+        ],
+        "edges": [
+          { "id": "e1", "source": "user", "target": "powerbi", "animated": true },
+          { "id": "e2", "source": "python", "target": "sql", "animated": true },
+          { "id": "e3", "source": "sql", "target": "powerbi", "animated": true }
+        ]
+      }
+    },
+    {
+      "title": "Cognito web-AI Powered website Builder",
+      "stack": "Html, Css, Javascript, Gemini Api",
+      "dates": "February 2025 - March 2025",
+      "bullets": [
+        "Developed an AI-powered website builder that dynamically generates website layouts based on user input using Gemini API.",
+        "Enabled export/download functionality for AI-generated websites, supporting user-driven edits and reuse.",
+        "Delivered a user-friendly experience with export/download features and automatic domain setup for deployed sites."
+      ],
+      "architecture": {
+        "nodes": [
+          { "id": "user", "type": "custom", "position": { "x": 250, "y": 0 }, "data": { "label": "User", "icon": "User", "details": "Provides prompts and inputs to generate website layouts." } },
+          { "id": "frontend", "type": "custom", "position": { "x": 250, "y": 100 }, "data": { "label": "Frontend (HTML/JS)", "icon": "Monitor", "details": "User interface for the website builder and preview." } },
+          { "id": "gemini", "type": "custom", "position": { "x": 100, "y": 200 }, "data": { "label": "Gemini API", "icon": "Sparkles", "details": "AI model that dynamically generates website layouts based on user input." } },
+          { "id": "export", "type": "custom", "position": { "x": 400, "y": 200 }, "data": { "label": "Export Service", "icon": "Download", "details": "Handles export/download functionality and automatic domain setup." } }
+        ],
+        "edges": [
+          { "id": "e1", "source": "user", "target": "frontend", "animated": true },
+          { "id": "e2", "source": "frontend", "target": "gemini", "animated": true },
+          { "id": "e3", "source": "gemini", "target": "frontend", "animated": true },
+          { "id": "e4", "source": "frontend", "target": "export", "animated": true }
+        ]
+      }
+    },
+    {
+      "title": "Proctor AI: Intelligent Online Exam Proctoring System",
+      "stack": "Python, OpenCV, MediaPipe, TensorFlow, PyTorch",
+      "dates": "2025 - Present",
+      "bullets": [
+        "Developed an intelligent online exam proctoring system using AI to monitor students and detect suspicious activities automatically.",
+        "Implemented face detection, eye/head movement tracking, and multiple person detection using OpenCV and MediaPipe to flag potential cheating attempts.",
+        "Integrated tab switching detection and audio monitoring to record background voices and minimize exam window events, logging all suspicious activities to an Admin Dashboard."
+      ],
+      "architecture": {
+        "nodes": [
+          { "id": "webcam", "type": "custom", "position": { "x": 250, "y": 0 }, "data": { "label": "User Webcam", "icon": "Monitor", "details": "Captures real-time video and audio feed of the student." } },
+          { "id": "face_detection", "type": "custom", "position": { "x": 250, "y": 100 }, "data": { "label": "Face Detection Model", "icon": "User", "details": "Checks if the student's face is visible and detects multiple faces." } },
+          { "id": "behavior_analysis", "type": "custom", "position": { "x": 250, "y": 200 }, "data": { "label": "Behavior Analysis", "icon": "Sparkles", "details": "Tracks eye/head movement and analyzes behavior using Computer Vision." } },
+          { "id": "suspicious_activity", "type": "custom", "position": { "x": 250, "y": 300 }, "data": { "label": "Suspicious Activity Detection", "icon": "FileCode2", "details": "Flags looking away, frequent head movement, or looking down at phone." } },
+          { "id": "event_logger", "type": "custom", "position": { "x": 250, "y": 400 }, "data": { "label": "Event Logger + Alerts", "icon": "Database", "details": "Logs tab switching, audio events, and generates warnings." } },
+          { "id": "admin_dashboard", "type": "custom", "position": { "x": 250, "y": 500 }, "data": { "label": "Admin Dashboard", "icon": "LayoutDashboard", "details": "Displays all logged suspicious activities for manual review." } }
+        ],
+        "edges": [
+          { "id": "e1", "source": "webcam", "target": "face_detection", "animated": true },
+          { "id": "e2", "source": "face_detection", "target": "behavior_analysis", "animated": true },
+          { "id": "e3", "source": "behavior_analysis", "target": "suspicious_activity", "animated": true },
+          { "id": "e4", "source": "suspicious_activity", "target": "event_logger", "animated": true },
+          { "id": "e5", "source": "event_logger", "target": "admin_dashboard", "animated": true }
+        ]
+      }
+    }
+  ],
+  "skills": [
+    {
+      "group": "Programming Languages",
+      "items": ["C", "C++", "Python"]
+    },
+    {
+      "group": "Web Development",
+      "items": ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "Express.js"]
+    },
+    {
+      "group": "Databases",
+      "items": ["MySQL", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "group": "Data Science & ML",
+      "items": ["Pandas", "NumPy", "PyTorch", "Scikit-Learn"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Arya College Of Engineering / Arya Institute of Engineering & Technology",
+      "location": "Jaipur",
+      "degree": "B.Tech. Computer Science Engineering",
+      "dates": "September 2022 - July 2026",
+      "score": "CGPA: 8.69 / 10"
+    },
+    {
+      "institution": "Rashtra shakti vidyalaya",
+      "degree": "Secondary school",
+      "dates": "",
+      "score": ""
+    }
+  ],
+  "certifications": [
+    "Deloitte Australia - Data Analytics Job Simulation",
+    "Tata - GenAI Powered Data Analytics Job Simulation",
+    "Data Vizualization - TATA(2024): Applied visualization principles to analyze datasets and present insights using charts and dashboards.",
+    "Data Security - BugDetox(2025): Covered core data security concepts and vulnerability identification techniques."
+  ],
+  "awards": [
+    "Microsoft Recognitions(2025): Earned Microsoft Level 9 Profile with 30+ digital badges"
+  ],
+  "extra": []
+}

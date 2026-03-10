@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: stats
+    // Document ID: visitors
+    // Fields:
+    //   - count: number (required) - The total number of visitors.
+    //
+    // ===============================================================
+
+    // Helper Functions
+    function isValidCounterUpdate() {
+      // Allow update only if 'count' is the ONLY field changing
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['count']) &&
+             // And the change is exactly +1
+             request.resource.data.count == resource.data.count + 1;
+    }
+
+    match /stats/visitors {
+      // Anyone can read the visitor count
+      allow read: if true;
+      
+      // Anyone can increment the visitor count by 1
+      allow update: if isValidCounterUpdate();
+      
+      // Allow creation if it doesn't exist (initialization)
+      allow create: if request.resource.data.keys().hasOnly(['count']) && request.resource.data.count == 1;
+    }
+  }
+}

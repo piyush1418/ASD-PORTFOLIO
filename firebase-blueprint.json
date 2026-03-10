@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "VisitorCount": {
+      "title": "VisitorCount",
+      "description": "Tracks the total number of visitors to the portfolio.",
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number",
+          "description": "The total number of visitors."
+        }
+      },
+      "required": ["count"]
+    }
+  },
+  "firestore": {
+    "/stats/visitors": {
+      "schema": { "$ref": "#/entities/VisitorCount" },
+      "description": "The document storing the visitor count."
+    }
+  }
+}
